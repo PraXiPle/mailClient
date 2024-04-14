@@ -1,0 +1,50 @@
+// @import "react-icons/io5"; // Adjust the path to react-icons if needed
+
+.InputSearch {
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #e4e8ee;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+    .Input {
+      font-size: 16px;
+      border-radius: inherit;
+      width: 90%;
+      height: 100%;
+      background-color: inherit;
+      border: none;
+      padding-block: 1px;
+      padding-inline: 2px;
+  
+      &::placeholder {
+        font-size: 14px;
+        color: #8d8e8f;
+        text-transform: capitalize;
+        opacity: 0.75;
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    &:focus-within {
+      box-shadow: 0 0 2px -1px #212121;
+  
+      .iconSearch {
+        opacity: 1;
+      }
+    }
+  
+    .iconSearch {
+      font-size: 18px;
+      font-weight: 900;
+      color: #8d8e8f;
+      opacity: 0.7;
+    }
+  }

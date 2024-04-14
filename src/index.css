@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Kumbh;
+  src: url(./assets/fonts/static/KumbhSans-Regular.ttf);
+}
+
+body{
+font-family: Kumbh;
+padding: 0;
+margin: 0;
+}
+#root{
+  background-color: #dbdee5;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+*{
+  box-sizing: border-box;
+}
+a:hover,button:hover , input[type=submit]:hover,input[type=button]:hover{
+cursor: pointer;
+box-shadow: 0 0 2px -1px #333333;
+/* transform: scale(1.02);   */
+}
+h1 , h2 , h3 , h4 , h5 , h6 ,p{
+  margin-block:0 ;
+}
+a{  
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  width: 4px;
+  background-color: #a1a1a1;
+}
+::-webkit-scrollbar-thumb{
+  width: 4px;
+  background-color: var(--green);
+}

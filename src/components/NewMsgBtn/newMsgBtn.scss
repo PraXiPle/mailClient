@@ -1,0 +1,25 @@
+.NewMsgBtn {
+    width: 90%;
+    height: 40px;
+    background-color: #00a389;
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0 5px;
+  
+    .mailIcon {
+      font-size: 22px;
+    }
+  
+    span {
+      font-size: 14px;
+    }
+  
+    &:active {
+      box-shadow: 0 0 3px 0 #333333;
+    }
+  }

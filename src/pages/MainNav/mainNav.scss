@@ -1,0 +1,51 @@
+.MainNav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0;
+    padding-right: 18px;
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      a {
+        padding: 10px;
+        border-radius: 10px;
+        color: var(--grey-icons);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+  
+        &:hover,
+        &.activeLink {
+          background-color: #e0f4f1;
+          color: var(--green);
+          box-shadow: 0 0 2px -1px #333333;
+        }
+      }
+    }
+  
+    .userImg {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      &:hover {
+        box-shadow: 0 0 3px 0 #333333;
+      }
+    }
+  
+    .img-log {
+      padding: 20px;
+      background-image: url(../../assets/img/logo-mail-box.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  

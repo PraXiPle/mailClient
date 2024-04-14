@@ -1,0 +1,31 @@
+.SendBtn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--green);
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 12px;
+  
+    &:nth-child(1) {
+      font-size: 20px;
+    }
+
+     &.loadingBtn{
+      opacity: 0.3;
+      animation: shaining 2s linear infinite;
+    }
+  }
+  
+  @keyframes shaining {
+    0%, 100% , 50% {
+      opacity: 0.3;
+    }
+     75%, 25% {
+      opacity: 1;
+    }
+  }
+  

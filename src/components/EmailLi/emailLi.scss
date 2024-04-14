@@ -1,0 +1,122 @@
+// @import "react-icons/fa"; // assuming you have imported react-icons styles elsewhere
+// @import "../Badge/badge"; // Adjust the path to your Badge component styles if needed
+
+.EmailLi {
+  width: 100%;
+  height: 60px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  background-color: inherit;
+  user-select: none;
+  justify-content: space-around;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px -1px #333333;
+  }
+
+  &.activeLink,
+  &.activeLink:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px -3px #333333;
+  }
+
+  .usersImageContainer {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .usersImageContainer :nth-child(1) {
+    z-index: 3;
+    width: 34px;
+    height: 34px;
+    right: 0px;
+  }
+
+  .usersImageContainer :nth-child(2) {
+    right: -4px;
+    width: 32px;
+    height: 32px;
+    opacity: .8;
+    z-index: 2;
+
+  }
+
+  .usersImageContainer :nth-child(3) {
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    opacity: .6;
+    z-index: 1;
+  }
+
+  img {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .info {
+    width: 60%;
+    height: 90%;
+    padding: 0 4px;
+    overflow: hidden;
+
+    h4 {
+      display: flex;
+      padding: 2px;
+      color: #333333;
+      font-size: 14px;
+    }
+
+    .textMessageInfo {
+      font-size: 12px;
+      padding: 2px;
+      color: #8191a9;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .timeAndBadeg {
+    width: 50px;
+    height: 80%;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+
+    .time {
+      font-size: 12px;
+      color: #717d9d;
+    }
+
+    .star {
+      font-size: 10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      color: #a3a3a3;
+      &.active{
+        color:var(--green);
+      }
+    }
+  }
+}

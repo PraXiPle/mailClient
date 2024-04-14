@@ -1,0 +1,36 @@
+.InputUser {
+    /* padding: 6px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+  
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333333;
+      padding: 6px 2px;
+      text-transform: capitalize;
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px 4px;
+      border: 1px solid var(--hr);
+      background-color: aliceblue;
+      border-radius: 6px;
+  
+      &:focus {
+        outline: 2px solid var(--green);
+      }
+  
+      &:placeholder-shown {
+        background-color: #fff;
+      }
+  
+      &::placeholder {
+        visibility: hidden;
+      }
+    }
+  }
+  
